@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block conteudo%}
+
+<div class="container">
+  <h1 class="alert alert-primary" role="alert">Calculadora</h1>
+  <h1>Resultados:</h1>
+
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Desconto Anual</th>
+        <th scope="col">Desconto Mensal</th>
+        <th scope="col">Desconto Aplicado</th>
+        <th scope="col">Cobertura</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>{{ annual_savings }}</td>
+        <td>{{ monthly_savings }}</td>
+        <td>{{ applied_discount }}</td>
+        <td>{{ coverage }}</td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+
+{% endblock %}
